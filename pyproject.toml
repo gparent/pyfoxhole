@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyfoxhole"
+version = "0.0.1"
+description = "A thin wrapper over the Foxhole World Conquest API"
+authors = [
+  { name = "gparent", email = "370905+gparent@users.noreply.github.com" },
+]
+license = { text = "MIT" }
+readme = "README.md"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Games/Entertainment",
+]
+requires-python = ">=3.9"
+dependencies = [
+  "requests<3",
+]
+
+[project.urls]
+"Bug Tracker" = "https://github.com/gparent/pyfoxhole/issues"
+"Homepage" = "https://github.com/gparent/pyfoxhole"
