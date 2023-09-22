@@ -25,3 +25,41 @@ dependencies = [
 [project.urls]
 "Bug Tracker" = "https://github.com/gparent/pyfoxhole/issues"
 "Homepage" = "https://github.com/gparent/pyfoxhole"
+
+[tool.black]
+line-length = 80
+target-version = ['py39', 'py310', 'py311']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.mypy_cache
+  | \.tox
+  | \venv
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+line_length = 80
+order_by_type = false
+profile = "black"
+skip_gitignore = true
+
+[tool.pylint.main]
+ignore = [".git"]
+
+[tool.pylint."messages control"]
+disable = [
+    "invalid-name",
+    "missing-class-docstring",
+    "missing-module-docstring",
+    "missing-function-docstring",
+]
+
+[tool.pylint.reports]
+# Template used to display messages. This is a python new-style format string
+# used to format the message information. See doc for all details.
+msg-template = "{path}:{line}: [{msg_id}, {obj}] {msg} ({symbol})"

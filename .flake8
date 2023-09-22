@@ -1,0 +1,6 @@
+[flake8]
+format = pylint
+ignore =
+    # Black
+    E203,
+max-line-length = 88
