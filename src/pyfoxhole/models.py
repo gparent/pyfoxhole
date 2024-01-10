@@ -55,6 +55,10 @@ class MapIcon(IntEnum):
     IntelCenter = 60
     CoalField = 61
     OilField = 62
+    RocketTarget = 70
+    RocketGroundZero = 71
+    RocketSiteWithRocket = 72
+    FacilityMineOilRig = 75
 
 
 class MapItem(TypedDict):
