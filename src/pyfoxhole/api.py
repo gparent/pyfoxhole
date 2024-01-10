@@ -6,6 +6,7 @@ from .models import MapDataResponse, WarReportResponse, WarResponse
 
 LIVE_API_URL = "https://war-service-live.foxholeservices.com/api"
 LIVE2_API_URL = "https://war-service-live-2.foxholeservices.com/api"
+LIVE3_API_URL = "https://war-service-live-3.foxholeservices.com/api"
 
 
 class Api:
