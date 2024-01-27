@@ -4,3 +4,5 @@ ignore =
     # Black
     E203,
 max-line-length = 88
+per-file-ignores =
+    tests/*.py:W0621
