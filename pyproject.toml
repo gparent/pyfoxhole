@@ -22,6 +22,17 @@ dependencies = [
   "requests<3",
 ]
 
+[project.optional-dependencies]
+dev = [
+    "black>24,<25",
+    "build",
+    "twine>=4,<5"
+]
+test = [
+    "pre-commit>=3,<4",
+    "pylint>=3,<4",
+]
+
 [project.urls]
 "Bug Tracker" = "https://github.com/gparent/pyfoxhole/issues"
 "Homepage" = "https://github.com/gparent/pyfoxhole"
