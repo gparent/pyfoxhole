@@ -17,7 +17,7 @@ repos:
       - id: name-tests-test
       - id: trailing-whitespace
   - repo: https://github.com/psf/black
-    rev: 24.1.1
+    rev: 24.2.0
     hooks:
       - id: black
   - repo: https://github.com/pycqa/isort
@@ -30,12 +30,12 @@ repos:
     hooks:
       - id: flake8
   - repo: https://github.com/PyCQA/pylint.git
-    rev: v3.0.3
+    rev: v3.1.0
     hooks:
       - id: pylint
         language: system
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.15.0
+    rev: v3.15.1
     hooks:
       - id: pyupgrade
         args: ['--py39-plus']
