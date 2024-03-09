@@ -51,6 +51,8 @@ class MapIcon(IntEnum):
     CoastalGun = 53
     SoulFactory = 54
     TownBase = 56
+    TownBase2 = 57
+    TownBase3 = 58
     StormCannon = 59
     IntelCenter = 60
     CoalField = 61
