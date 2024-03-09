@@ -1,10 +1,10 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=64.0", "setuptools-scm>=8"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "pyfoxhole"
-version = "0.0.1"
+dynamic = ["version"]
 description = "A thin wrapper over the Foxhole World Conquest API"
 authors = [
   { name = "gparent", email = "370905+gparent@users.noreply.github.com" },
@@ -26,6 +26,7 @@ dependencies = [
 dev = [
     "black>24,<25",
     "build",
+    "setuptools-scm>=8",
     "twine>=4,<5"
 ]
 test = [
@@ -70,3 +71,6 @@ disable = [
     "missing-function-docstring",
     "too-few-public-methods",
 ]
+
+[tool.setuptools_scm]
+version_file = "src/pyfoxhole/_version.py"
