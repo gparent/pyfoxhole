@@ -92,7 +92,7 @@ class WarResponse(TypedDict):
     warNumber: int
     winner: Faction
     conquestStartTime: int
-    conquestEndTIme: int
+    conquestEndTime: int
     resistanceStartTime: int
     requiredVictoryTowns: int
 
