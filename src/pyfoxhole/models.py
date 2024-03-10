@@ -50,6 +50,7 @@ class MapIcon(IntEnum):
     Seaport = 52
     CoastalGun = 53
     SoulFactory = 54
+    ClaimableBorderBase = 55
     TownBase = 56
     TownBase2 = 57
     TownBase3 = 58
