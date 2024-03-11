@@ -46,6 +46,9 @@ class MapIcon(IntEnum):
     ConstructionYard = 39
     ComponentMine = 40
     RelicBase = 45
+    BunkerBaseHusk = 48
+    BunkerBaseHusk2 = 49
+    BunkerBaseHusk3 = 50
     MassProductionFactory = 51
     Seaport = 52
     CoastalGun = 53
