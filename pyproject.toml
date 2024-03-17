@@ -27,7 +27,7 @@ dev = [
     "black>24,<25",
     "build",
     "setuptools-scm>=8",
-    "twine>=4,<5"
+    "twine>=5,<6"
 ]
 test = [
     "pre-commit>=3,<4",
