@@ -1,8 +1,11 @@
 from __future__ import annotations
 
+from typing import TYPE_CHECKING
+
 from requests import get
 
-from .models import MapDataResponse, WarReportResponse, WarResponse
+if TYPE_CHECKING:
+    from .models import MapDataResponse, WarReportResponse, WarResponse
 
 LIVE_API_URL = "https://war-service-live.foxholeservices.com/api"
 LIVE2_API_URL = "https://war-service-live-2.foxholeservices.com/api"
