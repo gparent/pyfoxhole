@@ -1,0 +1,27 @@
+name: pre-commit
+
+on:
+  pull_request:
+    types:
+      - edited
+      - opened
+      - reopened
+      - synchronize
+  workflow_dispatch:
+
+jobs:
+  pre-commit:
+    name: Run pre-commit on repository
+    runs-on: ubuntu-22.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip-tools
+          pip-compile --extra=dev,test --output-file=dev-requirements.txt --strip-extras --upgrade pyproject.toml
+          pip-sync dev-requirements.txt
+      - uses: pre-commit/action@v3.0.1
