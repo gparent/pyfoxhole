@@ -42,3 +42,8 @@ repos:
     hooks:
       - id: pyupgrade
         args: ['--py39-plus']
+
+ci:
+    autofix_prs: false
+    autoupdate_commit_msg: 'ci(pre-commit.ci): pre-commit autoupdate'
+    autoupdate_schedule: quarterly
