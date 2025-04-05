@@ -24,13 +24,13 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = [
-    "black>24,<25",
+    "black>24,<26",
     "build",
     "setuptools-scm>=8",
     "twine>=5,<6"
 ]
 test = [
-    "pre-commit>=3,<4",
+    "pre-commit>=3,<5",
     "pylint>=3,<4",
 ]
 
